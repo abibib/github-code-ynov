@@ -1,0 +1,76 @@
+<html>
+
+<head>
+    <title>Design</title>
+</head>
+
+<body>
+    <div class="parent">
+
+        <h1 class="maurice" id="mocha">MAURICE MOCHA</h1>
+        <h1 class="maurice">MAURICE</h1>
+        <h1 class="FEMME"></h1>
+    </div>
+
+    <div class="maurice"></div>
+
+    <a href="https://www.youtube.com//">ptit lien ytb</a>
+
+</body>
+
+<style>
+    .parent {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    body {
+        display: flex;
+    }
+
+    .maurice {
+        color: brown;
+    }
+
+    #mocha {
+        color: blue;
+    }
+
+    div {
+        background-color: blueviolet;
+    }
+
+    a {
+        color: aqua;
+    }
+</style>
+
+<script>
+    let variable = ["abi","bernard","bidule","truc"];
+
+    variable[0] = variable[0] + " " + variable[1];
+
+    function Brice() {
+        variable = variable + 1;
+        console.log("hello");
+        console.log("zelda");
+        console.log("code");
+        console.log("minecraft");
+        console.log(variable);
+
+        document.querySelector(".FEMME").innerHTML = variable;
+    }
+
+    Brice();
+    Brice();
+    Brice();
+
+    document.querySelector(".MAURICE").addEventListener("click", Brice);
+
+
+</script>
+
+</html>
