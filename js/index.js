@@ -28,3 +28,10 @@
 /*let background = 
 function setBackground()
 const indiceAleatoire = Math.floor(Math.random() * 1); */
+
+const bouton = document.getElementById("bouton");
+
+bouton.addEventListener("click", () => {
+  const element = document.getElementById("mon-element");
+  element.textContent = "Le texte a été modifié !";
+});
