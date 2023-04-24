@@ -51,6 +51,15 @@
         bottom: 150;
         left:260;
       }
+
+      .deuxiemeplante {
+        width: 15%;
+        height: auto;
+        position: absolute;
+        bottom: 150;
+        left:260;
+      }
+
         .bouton {
             background-color: #0D406D; 
             border: none; 
