@@ -27,8 +27,29 @@
     }
 
     */
+    .table {
+        width: 50%;
+        height: auto;
+        position: absolute;
+  bottom: 0;
+  left: 1;
+      }
 
+      .pot {
+        width: 10%;
+        height:auto;
+        position: absolute;
+        bottom:50;
+        left: 310;
+      }
 
+      .premiereplante {
+        width: 15%;
+        height: auto;
+        position: absolute;
+        bottom: 150;
+        left:260;
+      }
         .bouton {
             background-color: #0D406D; /* Couleur de fond */
             border: none; /* Pas de bordure */

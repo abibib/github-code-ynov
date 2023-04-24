@@ -29,6 +29,11 @@
 function setBackground()
 const indiceAleatoire = Math.floor(Math.random() * 1); */
 
+let background = [
+  "fond vert.png"
+]
+
+
 const bouton = document.getElementById("bouton");
 
 bouton.addEventListener("click", () => {
