@@ -29,9 +29,34 @@
 function setBackground()
 const indiceAleatoire = Math.floor(Math.random() * 1); */
 
+
 let background = [
-  "fond vert.png"
+  "fond vert.png",
+  "fond rose.png"
 ]
+
+function Brice() {
+
+  const indiceBackground = Math.floor(Math.random() * background.length);
+  document.querySelector(".background").src = background[indiceBackground];
+
+}
+
+document.querySelector(".bouton").addEventListener("click", Brice)
+
+function ChangeImage() {
+  document.querySelector(".background").style.backgroundImage = "fond rose.png";
+}
+
+document.querySelector("button").addEventListener("click",changeImage);
+
+
+
+
+
+
+
+
 
 
 const bouton = document.getElementById("bouton");

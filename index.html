@@ -4,39 +4,42 @@
     <title>Plant Generator</title>
     <link rel="stylesheet" href="./style.css">
 </head>
-
-
-<body class="hello">
 <style>
-    .hello{
-        background-image: url('./fond vert.png');
-        background-size: cover;
-        background-position: center;
+    .background{
+        width: 100VW;
+        height:100VH;
+        position: absolute;
+ z-index: -1;
     }
-
 </style>
+
 <body>
     
-    <div class="parent">
+    <div class="truc">
 
         <h1 class="maurice" id="mocha">Plant Generator</h1>
         <h1 class="FEMME"></h1>
     </div>
 
     <div class="maurice"></div>
-
+    
+    <img src="table code.png" class="background">
     <img src="table code.png" class="table">
     <img src="pot.png" class="pot">
     <img src= "Fichier 2.png" class="premiereplante">
     <img src="plante2.png" class="deuxieme plante">
     
-
+    <div class="parent">
+        <button>Changer l'image de fond</button>
+      </div>
 
     <button class="bouton"
         type="button">
     Changer feuilles
-    <button id="bouton">bouton</button>
+
 </button>
+    <button id="bouton">bouton</button>
+
 
     <script src="./js/index.js"></script>
 

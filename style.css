@@ -27,6 +27,7 @@
     }
 
     */
+   
     .table {
         width: 50%;
         height: auto;
@@ -51,15 +52,19 @@
         left:260;
       }
         .bouton {
-            background-color: #0D406D; /* Couleur de fond */
-            border: none; /* Pas de bordure */
-            color: white; /* Couleur du texte */
-            padding: 10px 20px; /* Espacement autour du texte */
-            text-align: center; /* Alignement du texte */
-            text-decoration: none; /* Pas de soulignement */
-            display: inline-block; /* Affichage en ligne */
-            font-size: 16px; /* Taille de police */
-            margin: 4px 2px; /* Marge autour du bouton */
-            cursor: pointer; /* Curseur de souris */
-            border-radius: 10px; /* Arrondi des coins */
+            background-color: #0D406D; 
+            border: none; 
+            color: white; 
+            padding: 10px 20px; 
+            text-align: center; 
+            text-decoration: none; 
+            display: inline-block; 
+            font-size: 16px; 
+            margin: 4px 2px; 
+            cursor: pointer; 
+            border-radius: 10px;
+          }
+
+          button:hover {
+            cursor: pointer;
           }
