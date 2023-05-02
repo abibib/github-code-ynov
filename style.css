@@ -1,79 +1,97 @@
-
-   /* .parent {
-        width:100vw;
-        height:100vh;
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
-    }
-
-    body {
-
-        background-image: ("https://img.freepik.com/vecteurs-libre/fond-monochrome-blanc-style-papier_52683-66443.jpg?w=996&t=st=1681717081~exp=1681717681~hmac=69e823b308dc6ff005232038e5f729cb398ef905aa7b3f26481a5c2780edd23furl","https://img.freepik.com/photos-gratuite/texture-mur-stuc-bleu-marine-relief-decoratif-abstrait-grunge-fond-colore-rugueux-grand-angle_1258-28311.jpg?w=1380&t=st=1681719539~exp=1681720139~hmac=3049596cad2c0e19c43d74483afd2c21bcaafda3f382be1ca7b5150ffe503010");
-        
-        display:flex;
-    }
-
-    .maurice {
-        color: brown;
-    }
-
-    #mocha {
-        color: blue;
-    }
-
-    a {
-        color: aqua;
-    }
-
-    */
-   
-    .table {
-        width: 50%;
-        height: auto;
-        position: absolute;
+.table {
+  width: 50%;
+  height: auto;
+  position: absolute;
   bottom: 0;
   left: 1;
-      }
+}
 
-      .pot {
-        width: 10%;
-        height:auto;
-        position: absolute;
-        bottom:50;
-        left: 310;
-      }
+.pot {
+  width: 10%;
+  height: auto;
+  position: absolute;
+  bottom: 50;
+  left: 310;
+}
 
-      .premiereplante {
-        width: 15%;
-        height: auto;
-        position: absolute;
-        bottom: 150;
-        left:260;
-      }
+.premiereplante {
+  width: 15%;
+  height: auto;
+  position: absolute;
+  bottom: 150;
+  left: 260;
+}
 
-      .deuxiemeplante {
-        width: 15%;
-        height: auto;
-        position: absolute;
-        bottom: 150;
-        left:260;
-      }
+.deuxiemeplante {
+  width: 15%;
+  height: auto;
+  position: absolute;
+  bottom: 170;
+  left: 260;
+}
 
-        .bouton {
-            background-color: #0D406D; 
-            border: none; 
-            color: white; 
-            padding: 10px 20px; 
-            text-align: center; 
-            text-decoration: none; 
-            display: inline-block; 
-            font-size: 16px; 
-            margin: 4px 2px; 
-            cursor: pointer; 
-            border-radius: 10px;
-          }
+.troisiemeplante {
+  width: 10%;
+  height: auto;
+  position: absolute;
+  bottom: 150;
+  left: 305;
+}
 
-          button:hover {
-            cursor: pointer;
-          }
+.bouton {
+  background-color: #0D406D;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 10px;
+  position: relative;
+  top: 0;
+}
+
+.boutonfeuilles {
+  background-color: #0D406D;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 8px 8px; 
+  cursor: pointer;
+  border-radius: 10px;
+  position: relative;
+  top: 70;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+@font-face {
+  font-family: "Satisfy";
+  src: url("Satisfy-Regular.ttf");
+}
+
+body {
+font-family: "Satisfy", sans-serif;
+}
+
+h1 {
+  font-size: 60px;
+  margin-top: 40;
+  margin-left: 170;
+
+}
+
+.button {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
