@@ -17,9 +17,13 @@
 </style>
 
 <body>
+<div class="container">
+    <button class="Screenshot">Screenshot</button>
+</div>
 
-    */ grande div. display flex absolute et ensuite justify content pour que ça se justifie à droite. et ensuite truc
-    pour mettre en colonnes */
+// grande div. display flex absolute et ensuite justify content pour que ça se justifie à droite. et ensuite truc
+    pour mettre en colonnes //
+    
     <div class="buttons">
         <button>bouton</button>
         <button>boutonfeuilles</button>
@@ -46,5 +50,44 @@
         <script src="./js/index.js"></script>
 
 </body>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"
+    integrity="sha512-BNaRQnYJYiPSqHHDb58B0yaPfCu+Wgds8Gp/gU33kqBtgNS4tSPHuGibyoeqMV/TJlSKda6FXzoEyYGjTe+vXA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script>
+    function Screenx() {
+        console.log("pokemon")
+        var test = 1;
+        var canvasPromise = html2canvas(document.querySelector(".container"), {
+            useCORS: true
+        });
+
+        canvasPromise.then((canvas)=> {
+            console.log(canvas)
+
+            document.body.appendChild(canvas)
+
+            var dataURL = canvas.toDataURL("image/png");
+            console.log(dataURL)
+
+            var img = new Image();
+            img.src = dataURL;
+            img.download = "slay";
+
+            var a = document.createElement("a");
+            a.innerHTML = "DOWNLOAD ton image";
+            a.target = "_blank";
+            a.href = img.src;
+            a.download = img.download;
+
+            document.body.appendChild(a)
+
+            a.click()
+
+        })
+    };
+
+    document.querySelector(".Screenshot").addEventListener("click", Screenx);
+</script>
 
 </html>
