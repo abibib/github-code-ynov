@@ -23,11 +23,9 @@ document.querySelector(".boutonfeuilles").addEventListener("click", function () 
   // On incrémente l'indice de l'image actuelle
   indiceImage++;
 
-  // Si on est arrivé à la fin du tableau, on revient au début
   if (indiceImage >= images.length) {
     indiceImage = 0;
   }
 
-  // On change la source de l'image
   document.querySelector(".premiereplante").src = images[indiceImage];
 });

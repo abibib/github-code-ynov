@@ -17,17 +17,17 @@
 </style>
 
 <body>
-    <div class="container">
-        <button class="Screenshot">Screenshot</button>
-    </div>
-
 
     <div class="buttons">
         <button class="boutonfeuilles" type="button">
             Changer feuilles</button>
-
         <button class="bouton" type="button">
-            Changer l'image de fond
+            Changer l'image de fond</button>
+        <button class="Screenshot">Screenshot</button>
+        <button href="#">
+            <img src="jour bouton.png" alt="monbouton" class="monbouton"></button>
+            <button href="#">
+                <img src="nuit bouton.png" alt="monbouton" class="monboutonnuit"></button>
     </div>
 
     <h1 class="maurice" id="mocha">Plant Generator</h1>
@@ -37,12 +37,13 @@
     <div class="maurice"></div>
 
     <img src="fond vert.png" class="background">
+    <img src="jour.png" class="jour">
+    <img src="nuit.png" class="nuit">
+    <img src="fenetre.png" class="fenetre1">
+    <img src="fenetre 2.png" class="fenetre2">
     <img src="table code.png" class="table">
     <img src="Fichier 2.png" class="premiereplante">
     <img src="pot.png" class="pot">
-
-
-
 
     <script src="./js/index.js"></script>
 
@@ -55,7 +56,7 @@
     function Screenx() {
         console.log("pokemon")
         var test = 1;
-        var canvasPromise = html2canvas(document.querySelector(".container"), {
+        var canvasPromise = html2canvas(document.querySelector(".Screenshot"), {
             useCORS: true
         });
 
@@ -69,7 +70,7 @@
 
             var img = new Image();
             img.src = dataURL;
-            img.download = "slay";
+            img.download = "plante";
 
             var a = document.createElement("a");
             a.innerHTML = "DOWNLOAD ton image";
