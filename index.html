@@ -17,16 +17,17 @@
 </style>
 
 <body>
-<div class="container">
-    <button class="Screenshot">Screenshot</button>
-</div>
+    <div class="container">
+        <button class="Screenshot">Screenshot</button>
+    </div>
 
-// grande div. display flex absolute et ensuite justify content pour que ça se justifie à droite. et ensuite truc
-    pour mettre en colonnes //
-    
+
     <div class="buttons">
-        <button>bouton</button>
-        <button>boutonfeuilles</button>
+        <button class="boutonfeuilles" type="button">
+            Changer feuilles</button>
+
+        <button class="bouton" type="button">
+            Changer l'image de fond
     </div>
 
     <h1 class="maurice" id="mocha">Plant Generator</h1>
@@ -40,14 +41,10 @@
     <img src="Fichier 2.png" class="premiereplante">
     <img src="pot.png" class="pot">
 
-    <button class="boutonfeuilles" type="button">
-        Changer feuilles</button>
-
-    <button class="bouton" type="button">
-        Changer l'image de fond
 
 
-        <script src="./js/index.js"></script>
+
+    <script src="./js/index.js"></script>
 
 </body>
 
@@ -62,7 +59,7 @@
             useCORS: true
         });
 
-        canvasPromise.then((canvas)=> {
+        canvasPromise.then((canvas) => {
             console.log(canvas)
 
             document.body.appendChild(canvas)
