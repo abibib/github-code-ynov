@@ -20,6 +20,7 @@
 
 <body>
 
+    <div id="filtrenuit"></div>
 
     <div class="buttons">
         <button class="boutonfeuilles" type="button">
@@ -29,12 +30,12 @@
         <button class="Screenshot">Screenshot</button>
         <button class="boutonfenêtre" type="button">
             Changer fenêtre</button>
-        <button>
-            <img src="jour bouton.png" alt="monbouton" class="monboutonjour"></button>
-        <button>
-            <img src="nuit bouton.png" alt="monbouton" class="monboutonnuit" id="gege"></button>
-    </div>
 
+            <div class="container-boutons-jour-nuit">
+                <div class="bouton-jour"><img src="jour bouton.png" alt="monbouton" class="monboutonjour"></div>
+                <div class="bouton-nuit"><img src="nuit bouton.png" alt="monbouton" class="monboutonnuit" id="gege"></div>
+            </div>
+    </div>
 
     <div class="texte">
         <textarea type="text" id="monTextarea" placeholder="Nommez votre plante"></textarea>
@@ -74,7 +75,7 @@
     function Screenx() {
         console.log("pokemon")
         var test = 1;
-        var canvasPromise = html2canvas(document.body, {
+        var canvasPromise = html2canvas(document.querySelector("body"), {
             useCORS: true
         });
 

@@ -1,7 +1,7 @@
 let background = [
   "fond vert.png",
   "fond rose (1).png",
-  "fond bleu (1).png"
+  "fond bleu.jpg"
 ]
 
 function Brice() {
@@ -73,11 +73,22 @@ document.addEventListener('DOMContentLoaded', function() {
 var monTextarea = document.getElementById("monTextarea");
 var valeurTextarea = monTextarea.value;
 
-var boutonNuit = document.getElementById("monboutonnuit");
+
 var contenu = document.getElementById("contenu");
 
-boutonNuit.addEventListener("click", function() {
-  contenu.classList.toggle("filternuit");
+const filtreDeMerde = document.getElementById("filtrenuit");
+
+var monboutonjour = document.querySelector(".monboutonjour");
+var monboutonnuit = document.querySelector(".monboutonnuit")
+
+monboutonnuit.addEventListener("click", function() {
+
+  filtreDeMerde.style.visibility = "visible";
+});
+
+monboutonjour.addEventListener("click", function() {
+
+  filtreDeMerde.style.visibility = "hidden";
 });
 
 
