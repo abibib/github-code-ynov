@@ -54,8 +54,16 @@
   left: 230;
 }
 
-.jour {
-  width: 18%;
+.fenetre3 {
+  width: 20%;
+  height: auto;
+  position:absolute;
+  bottom: 130;
+  left: 230;
+}
+
+#imageAffichee {
+  width: 19%;
   height: auto;
   position: absolute;
   bottom: 130;
@@ -68,6 +76,26 @@
   position: absolute;
   bottom: 130;
   left: 240;
+}
+
+.monboutonjour {
+
+  width: 50px;
+  height: auto;
+  border: none;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+.monboutonnuit {
+
+  width: 50px;
+  height: auto;
+  border: none;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
 }
 
 .bouton {
@@ -96,6 +124,21 @@
   position: relative;
 }
 
+.boutonfenêtre {
+
+  background-color: #0D406D;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px; 
+  cursor: pointer;
+  border-radius: 10px;
+  position: relative;
+}
+
+
 button:hover {
   cursor: pointer;
 }
@@ -111,8 +154,12 @@ font-family: "Satisfy", sans-serif;
 
 h1 {
   font-size: 60px;
-  margin-top: 0;
-  margin-left: 170;
+  margin-left: 50;
+  position: absolute;
+  top: 0;
+  display: flex;
+  align-items: flex-start;
+  justify-content:flex-start ;
 
 }
 
@@ -139,22 +186,67 @@ h1 {
   justify-content: flex-end;
 }
 
-.monbouton {
+.texte {
+  width: 100%;
+  display : flex;
+  flex-direction: row;
+  justify-content: end;
+}
+textarea {
 
-  width: 50px;
-  height: auto;
+  background-color:beige;
   border: none;
+  border-radius: 10px;
+  position: relative;
   display: flex;
   align-items: flex-end;
   justify-content: flex-end;
+  resize: none;
 }
 
-.monboutonnuit {
+audio {
 
-  width: 50px;
-  height: auto;
-  border: none;
+  width: 20%;
+  outline: none;
+  border-radius: 18px;
   display: flex;
-  align-items: flex-end;
-  justify-content: flex-end;
+  position: fixed;
+  bottom: 10;
+  right: 10;
+}
+
+p,
+label {
+    font: 1rem 'Fira Sans', sans-serif;
+}
+
+input {
+    margin: 0.4rem;
+}
+
+#rendutexte {
+
+  width: 80px;
+  height:30px;
+  border-radius: 10px;
+background-color:beige;
+  position: absolute;
+  left:332px;
+  bottom: 90px;
+  z-index: 999;
+}
+
+.interface {
+
+  width: 380px;
+  height: auto;
+  position: absolute;
+  right: 90px;
+  bottom: 20px;
+  z-index: -4;
+}
+
+.filtrenuit {
+
+  filter: brightness(70%) contrast(150%) grayscale(100%);
 }

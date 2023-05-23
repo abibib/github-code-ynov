@@ -9,14 +9,17 @@
         width: 100VW;
         height: 100VH;
         position: absolute;
-        z-index: -1;
+        z-index: -5;
         top: 0;
         left: 0;
         object-fit: cover;
+        background-size: cover;
+        
     }
 </style>
 
 <body>
+
 
     <div class="buttons">
         <button class="boutonfeuilles" type="button">
@@ -24,26 +27,41 @@
         <button class="bouton" type="button">
             Changer l'image de fond</button>
         <button class="Screenshot">Screenshot</button>
-        <button href="#">
-            <img src="jour bouton.png" alt="monbouton" class="monbouton"></button>
-            <button href="#">
-                <img src="nuit bouton.png" alt="monbouton" class="monboutonnuit"></button>
+        <button class="boutonfenêtre" type="button">
+            Changer fenêtre</button>
+        <button>
+            <img src="jour bouton.png" alt="monbouton" class="monboutonjour"></button>
+        <button>
+            <img src="nuit bouton.png" alt="monbouton" class="monboutonnuit" id="gege"></button>
     </div>
+
+
+    <div class="texte">
+        <textarea type="text" id="monTextarea" placeholder="Nommez votre plante"></textarea>
+    </div>
+
+    <audio src="just-relax-11157.mp3" controls autoplay loop></audio>
 
     <h1 class="maurice" id="mocha">Plant Generator</h1>
     <h1 class="FEMME"></h1>
     </div>
 
+    <div id="rendutexte">
+
+    </div>
+
     <div class="maurice"></div>
+    
 
     <img src="fond vert.png" class="background">
-    <img src="jour.png" class="jour">
-    <img src="nuit.png" class="nuit">
+    <img src="jour.png" id="imageAffichee">
     <img src="fenetre.png" class="fenetre1">
     <img src="fenetre 2.png" class="fenetre2">
+    <img src="fenetre4.png" class="fenetre3">
     <img src="table code.png" class="table">
     <img src="Fichier 2.png" class="premiereplante">
     <img src="pot.png" class="pot">
+    <img src="inter.png" class="interface">
 
     <script src="./js/index.js"></script>
 
@@ -56,14 +74,13 @@
     function Screenx() {
         console.log("pokemon")
         var test = 1;
-        var canvasPromise = html2canvas(document.querySelector(".Screenshot"), {
+        var canvasPromise = html2canvas(document.body, {
             useCORS: true
         });
 
         canvasPromise.then((canvas) => {
             console.log(canvas)
 
-            document.body.appendChild(canvas)
 
             var dataURL = canvas.toDataURL("image/png");
             console.log(dataURL)
@@ -81,6 +98,7 @@
             document.body.appendChild(a)
 
             a.click()
+            a.remove()
 
         })
     };
