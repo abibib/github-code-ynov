@@ -20,7 +20,6 @@ const images = ["Fichier 2.png", "plante2.png", "plante 3 cactus.png"];
 let indiceImage = 2;
 
 document.querySelector(".boutonfeuilles").addEventListener("click", function () {
-  // On incrémente l'indice de l'image actuelle
   indiceImage++;
 
   if (indiceImage >= images.length) {
@@ -58,11 +57,11 @@ monboutonnuit.addEventListener("click", function () {
 
 });
 
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
   var rendutexte = document.getElementById("rendutexte");
   var textarea = document.getElementById("monTextarea");
-  
-  textarea.addEventListener("input", function(){
+
+  textarea.addEventListener("input", function () {
     var textTape = textarea.value;
     rendutexte.innerHTML = textTape;
   })
@@ -81,12 +80,12 @@ const filtreDeMerde = document.getElementById("filtrenuit");
 var monboutonjour = document.querySelector(".monboutonjour");
 var monboutonnuit = document.querySelector(".monboutonnuit")
 
-monboutonnuit.addEventListener("click", function() {
+monboutonnuit.addEventListener("click", function () {
 
   filtreDeMerde.style.visibility = "visible";
 });
 
-monboutonjour.addEventListener("click", function() {
+monboutonjour.addEventListener("click", function () {
 
   filtreDeMerde.style.visibility = "hidden";
 });
