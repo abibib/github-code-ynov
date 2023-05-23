@@ -174,7 +174,7 @@ h1 {
   align-items: flex-end;
   justify-content: flex-end;
   z-index: 80;
-  top: 200;
+  top: 500;
   right: 222;
 }
 
@@ -193,7 +193,7 @@ h1 {
   justify-content: space-between;
   z-index: 999;
   position: relative;
-  top: 250;
+  top: 200;
   right: 210;
 }
 
@@ -231,7 +231,7 @@ textarea {
   justify-content: flex-end;
   resize: none;
   z-index: 80;
-  top: 150;
+  top: 90;
   right: 200;
 }
 
