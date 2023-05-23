@@ -242,7 +242,7 @@ audio {
   border-radius: 18px;
   display: flex;
   position: fixed;
-  bottom: 160;
+  bottom: 150;
   right: 180;
   z-index: 80;
 }
